@@ -6,21 +6,32 @@ body{
     justify-content: center;
 }
 
+.center1, .center2{
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.center2{
+    padding-left: 25px;
+}
+
 .indhold{
     display: grid;
     margin-top: 10px;
     padding-top: 10px;
 }
-.velkommen, .velkommen3, .betingelse, .brutto, .coaching, .eksamen,
-.filosofien, .info, .kontakt, .maal, .nlper, .priser, .privat,
-.stotten, .coachende, .opbygningen{
+.velkommen, .velkommen3, .tilgang, .tilgang3, .filosofien, .undervisning,
+.coaching, .NLP, .NLP3, .opbygning, .opbygning3, .modul, .modul3,
+.eksamen, .info, .info3, .sted, .pris, .pris3, .brutto, .stotte, .betingelse,
+.tilmeld, .kontakt{
     display: flex;
     flex-direction: row;
     max-width: 940px;
 }
 
-.velkommen2, .arbejdsgiver, .undervisere, .earlybird, .kollega,
-.coachende2, .opbygningen2{
+.velkommen2, .tilgang2, .filosofien2, .coaching2, .NLP2, .opbygning2, .modul2,
+.eksamen2, .info2, .sted2, .pris2, .pris4, .brutto2, .tilmeld2{
     display: flex;
     flex-direction: row-reverse;
     max-width: 940px;
@@ -28,12 +39,18 @@ body{
 
 /*menu*/
 nav{
-    background-color: lightgray;
+    background-color: #666;
     text-align: center;
     justify-content: center;
     font-size: large;
     font-family: 'Cormorant Garamond', serif;
     max-width: 940px;
+}
+
+nav a{
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
 }
 
 nav img{
@@ -55,7 +72,7 @@ nav ul li {
 
 .dropdown > ul {
     display: none;
-    background-color: #f9f9f9;
+    background-color: #333;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 1em;
@@ -78,9 +95,18 @@ footer img {
 }
 
 footer{
-    background-color: lightgray;
+    background-color: #666;
     text-align: center;
+    color: white;
     max-width: 940px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: large;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;    
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /*burgermenu*/
@@ -154,17 +180,24 @@ nav.show {
 /* responsivnes */
 
 @media screen and (max-width:768px) {
-    .velkommen, .velkommen3, .betingelse, .brutto, .coaching, .eksamen,
-.filosofien, .info, .kontakt, .maal, .nlper, .priser, .privat,
-.stotten, .coachende, .opbygningen, .velkommen2, .arbejdsgiver, 
-.undervisere, .earlybird, .kollega,
-.coachende2, .opbygningen2{
+    .velkommen, .velkommen3, .tilgang, .tilgang3, .filosofien, .undervisning,
+    .coaching, .NLP, .NLP3, .opbygning, .opbygning3, .modul, .modul3, .eksamen,
+    .info, .info3, .sted, .pris, .pris3, .brutto, .stotte, .betingelse, .tilmeld,
+    .kontakt{
+        display: block;
+    }
+    .velkommen2, .tilgang2, .filosofien2, .coaching2, .NLP2, .opbygning2, .modul2,
+    .eksamen, .info2, .sted2, .pris2, .pris4, .brutto2, .tilmeld2{
         display: block;
     }
     header img {
         display: none;
     }
+    .center2{
+        padding: 0px;
+    }
 }
+
 @media screen and (min-width:768px) {
     .burger {
         display: none;
