@@ -1,3 +1,6 @@
+html{
+    max-width: 100%;
+}
 body{
     margin-left: 40px;
     margin-right: 40px;
@@ -179,7 +182,7 @@ nav.show {
 
 /* responsivnes */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:670px) {
     .velkommen, .velkommen3, .tilgang, .tilgang3, .filosofien, .undervisning,
     .coaching, .NLP, .NLP3, .opbygning, .opbygning3, .modul, .modul3, .eksamen,
     .info, .info3, .sted, .pris, .pris3, .brutto, .stotte, .betingelse, .tilmeld,
@@ -196,9 +199,34 @@ nav.show {
     .center2{
         padding: 0px;
     }
+
+    nav{
+        width: 100%;
+        font-size: medium;
+    }
+    .center1, .center2{
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    
+    .center2{
+        padding-left: 0px;
+    }
+    
+    .indhold{
+        display: block;
+        margin-top: 0px;
+        padding-top: 0px;
+        max-width: 100%;
+    }
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:670px) {
     .burger {
         display: none;
     }
