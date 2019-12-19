@@ -201,8 +201,8 @@ nav.show {
     }
 
     nav{
-        width: 100%;
-        font-size: medium;
+        max-width: 100%;
+        font-size: small;
     }
     .center1, .center2{
         padding-right: 0px;
