@@ -190,28 +190,18 @@ nav.show {
         display: block;
     }
     .velkommen2, .tilgang2, .filosofien2, .coaching2, .NLP2, .opbygning2, .modul2,
-    .eksamen, .info2, .sted2, .pris2, .pris4, .brutto2, .tilmeld2{
+    .eksamen2, .info2, .sted2, .pris2, .pris4, .brutto2, .tilmeld2{
         display: block;
     }
     header img {
         display: none;
     }
-    .center2{
-        padding: 0px;
-    }
-
     nav{
         max-width: 100%;
         font-size: small;
     }
     .center1, .center2{
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-top: 0px;
-    }
-    
-    .center2{
-        padding-left: 0px;
+        padding: 0px;
     }
     
     .indhold{
